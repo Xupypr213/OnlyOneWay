@@ -1,0 +1,604 @@
+*{
+  box-sizing: content-box;
+  position: relative;
+}
+
+body{
+  width: 100%;
+}
+
+h1, h2, h3, h4, h5, p{
+  font-family: 'KarloCham';
+  color: white;
+}
+
+.container1{
+  display: flex;
+  border-bottom: 20px solid black;
+  width: 100%;
+  height: fit-content;
+}
+
+.left-block1{
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  background: url(./img/bg1.svg) no-repeat;
+  background-size: cover;
+  border-right: 20px solid black;
+  overflow: hidden;
+}
+
+.lin{
+  width: 175%;
+  margin: 20px 0;
+}
+
+.lin1{
+  width: 100%;
+  animation: lin1 5s linear infinite;
+}
+
+@keyframes lin1 {
+  0% {transform: translateX(0) ,}
+  100% {transform: translateX(-35%);}
+}
+
+.logo{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.strelka{
+  animation: strelka 3s linear infinite;
+}
+
+@keyframes strelka{
+  0% {transform: translateY(5%)}
+  50%{transform: translateY(-5%)}
+  100% {transform: translateY(5%)}
+}
+
+.lg{
+  animation: lg 4s linear infinite;
+}
+
+@keyframes lg{
+  0% {transform: translateY(10%)}
+  50%{transform: translateY(-10%)}
+  100% {transform: translateY(10%)}
+}
+
+.lin2{
+  width: 100%;
+  animation: lin2 5s linear infinite;
+}
+
+@keyframes lin2 {
+  0% {transform: translateX(-35%)}
+  100% {transform: translateX(0);}
+}
+
+.strelka1 img, .lg img, .strelka2 img{
+  width: 100%;
+}
+
+.right-block1{
+  width: 45%;
+  position: relative;
+  background: url(./img/bg2.svg) no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.solntse{
+  position: absolute;
+  bottom: 0;
+  min-width: 100%;
+  height: fit-content;
+  animation: solntse 10s linear infinite;
+}
+
+.solntse img{
+  width: 100%;
+  object-fit: cover;
+}
+
+@keyframes solntse {
+  0% {left: 0%; top: 0%; }
+  50% { left: -10%; top: 30%;}
+  100% {left: 0%; top: 0%; }
+}
+
+.container2{
+  display: flex;
+  border-bottom: 20px solid black;
+  width: 100%;
+  height: fit-content;
+}
+
+.left-block2{
+  width: 35%;
+  background: url(./img/bg3.svg) no-repeat;
+  background-size: cover;
+  border-right: 20px solid black;
+  overflow: hidden;
+}
+
+.treugolnik1{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  animation: treugolnik1 2s linear infinite;
+}
+
+@keyframes treugolnik1{
+  0% {transform: translateX(-324px);}
+  100% {transform: translateX(0);}
+}
+
+.treugolnik2{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  animation: treugolnik2 2s linear infinite;
+}
+
+@keyframes treugolnik2{
+  0% {transform: translateX(-321px);}
+  100% {transform: translateX(0);}
+}
+
+.treugolnik img{
+  width: 70%;
+  height: 100%;
+}
+
+.middle-block2{
+  width: 60%;
+  border-right: 20px solid black;
+  background: url(./img/bg4.svg);
+  background-size: cover;
+  overflow: hidden;
+}
+
+.lin3{
+  width: 100%;
+  margin: 20px 0 ;
+  animation: lin3 5s linear infinite;
+}
+
+@keyframes lin3 {
+  0% {transform: translateX(-38%)}
+  100% {transform: translateX(0);}
+}
+
+
+.obloka{
+  width: 100%;
+  height: 100%;
+}
+
+.obloka:nth-child(2){
+  min-width: 55%;
+  position: absolute;
+  top: 40%;
+  left: 0;
+  z-index: 1;
+  animation: obloka 15s linear infinite;
+}
+
+@keyframes obloka{
+  0% {transform: translateX(-50%);}
+  50% {transform: translateX(0);}
+  100% {transform: translateX(-50%);}
+}
+
+.obloka:nth-child(3){
+  min-width: 82%;
+  position: absolute;
+  top: 0;
+  left: 20%;
+  animation: oblokaa 15s linear infinite;
+}
+
+@keyframes oblokaa{
+  0% {transform: translateX(60%);}
+  50% {transform: translateX(0);}
+  100% {transform: translateX(60%);}
+}
+
+.right-block2{
+  width: 21%;
+  background: url(./img/bg5.svg);
+  background-size: cover;
+  overflow: hidden;
+}
+
+.container3{
+  width: 100%;
+  height: 31vw;
+  display: flex;
+  border-bottom: 20px solid black;
+}
+
+.left-block3{
+  width: 55%;
+  height: 100%;
+  background: url(./img/bg6.svg) no-repeat;
+  background-size: cover;
+  border-right: 20px solid black;
+  overflow: hidden;
+}
+
+.lin4{
+  top: -10%;
+  right: 12vw;
+  animation: lin4 5s linear infinite;
+}
+
+@keyframes lin4 {
+  0% {transform: translateY(0)}
+  100% {transform: translateY(-18.4%);}
+}
+
+.elka1{
+  position: absolute;
+  right: 1vw;
+  top: 2vw;
+  width: 100%;
+  animation: elka1 6s linear infinite;
+}
+
+@keyframes elka1{
+  0% {transform: translateY(4%)}
+  50%{transform: translateY(-1%)}
+  100% {transform: translateY(4%)}
+}
+
+.elka2{
+  position: absolute;
+  left: 7vw;
+  top: -1vw;
+  width: 100%;
+  animation: elka2 7s linear infinite;
+}
+
+@keyframes elka2{
+  0% {transform: translateY(4%)}
+  50%{transform: translateY(-2%)}
+  100% {transform: translateY(4%)}
+}
+
+.elka3{
+  position: absolute;
+  left: 26vw;
+  top: 2vw;
+  width: 100%;
+  animation: elka3 5s linear infinite;
+}
+
+@keyframes elka3{
+  0% {transform: translateY(6%)}
+  50%{transform: translateY(0%)}
+  100% {transform: translateY(6%)}
+}
+
+.lin5{
+  width: 55%;
+  bottom: 55vw;
+  left: 39vw;
+  animation: lin5 5s linear infinite;
+}
+
+@keyframes lin5 {
+  0% {transform: translateY(0)}
+  100% {transform: translateY(-18.4%);}
+}
+
+.right-block3{
+  width: 45%;
+  background: url(./img/bg7.svg);
+  background-size: cover;
+  overflow: hidden;
+}
+
+.treugolnikh{
+  display: flex;
+  height: 100%;
+}
+
+.tr1{
+  animation: tr1 5s linear infinite;
+}
+
+@keyframes tr1 {
+  0% {transform: translateX(10%)}
+  50%{transform: translateX(0%)}
+  100% {transform: translateX(10%)}
+}
+
+.tr2{
+  margin-left: 54%;
+  animation: tr2 5s linear infinite;
+}
+
+@keyframes tr2 {
+  0% {transform: translateX(-10%)}
+  50%{transform: translateX(0%)}
+  100% {transform: translateX(-10%)}
+}
+
+.treugolnikv{
+  position: absolute;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.tr3{
+  width: 100%;
+  margin-top: -31vw;
+  animation: tr3 5s linear infinite;
+}
+
+@keyframes tr3 {
+  0% {transform: translateY(-10%)}
+  50%{transform: translateY(-5%)}
+  100% {transform: translateY(-10%)}
+}
+
+.tr4{
+  width: 100%;
+  animation: tr4 5s linear infinite;
+}
+
+@keyframes tr4 {
+  0% {transform: translateY(10%)}
+  50%{transform: translateY(5%)}
+  100% {transform: translateY(10%)}
+}
+
+.text1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.text1 h1{
+  font-size: 65px;
+  bottom: 23vw;
+  left: 10vw;
+  line-height: 85.4%;
+  animation: text1 5s linear infinite;
+}
+
+@keyframes text1 {
+  0% {transform: translateY(4%)}
+  50%{transform: translateY(-2%)}
+  100% {transform: translateY(4%)}
+}
+
+h2{
+  font-size: 40px;
+  bottom: 16vw;
+  right: 12vw;
+  line-height: 85.4%;
+  animation: text21 4s linear infinite;
+}
+
+@keyframes text21 {
+  0% {transform: translateY(4%)}
+  50%{transform: translateY(-2%)}
+  100% {transform: translateY(4%)}
+}
+
+.container4{
+  display: flex;
+  border-bottom: 20px solid black;
+  width: 100%;
+  height: 100%;
+}
+
+.block4{
+  width: 100%;
+  height: 100%;
+  background: url(./img/bg8.svg) no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.lin6{
+  width: 70%;
+  bottom: -2vw;
+  left: -8vw;
+  animation: lin6 5s linear infinite;
+}
+
+@keyframes lin6 {
+  0% {transform: translateX(-27%)}
+  100% {transform: translateX(0);}
+}
+
+.text2 p{
+  top: 4vw;
+  font-size: 40px;
+  white-space: nowrap; 
+  animation: text2 2s linear infinite;
+}
+
+@keyframes text2 {
+  0% {transform: translateX(-19.9%)}
+  100% {transform: translateX(0);}
+}
+
+.volni{
+  top: 17vw;
+  z-index: 2;
+  animation: volni1 2s linear infinite;
+}
+
+@keyframes volni1{
+  0% {transform: translateX(-5%)}
+  50%{transform: translateX(-3%)}
+  100% {transform: translateX(-5%)}
+}
+
+.volni2{
+  animation: volni2 2s linear infinite;
+}
+
+@keyframes volni2{
+  0% {transform: translateX(5%)}
+  50%{transform: translateX(3%)}
+  100% {transform: translateX(5%)}
+}
+
+.container5{
+  display: flex;
+  border-bottom: 20px solid black;
+  width: 100%;
+  height: 26vw;
+}
+
+.left-block5{
+  width: 40%;
+  height: 100%;
+  background: url(./img/bg9.svg) no-repeat;
+  background-size: cover;
+  border-right: 20px solid black;
+  overflow: hidden;
+}
+
+.treugolnikh1{
+  display: flex;
+  height: 100%;
+}
+
+.tr5{
+  animation: tr1 5s linear infinite;
+}
+
+@keyframes tr5 {
+  0% {transform: translateX(10%)}
+  50%{transform: translateX(0%)}
+  100% {transform: translateX(10%)}
+}
+
+.tr6{
+  width: 100%;
+  margin-left: 72%;
+  animation: tr2 5s linear infinite;
+}
+
+@keyframes tr6 {
+  0% {transform: translateX(-10%)}
+  50%{transform: translateX(0%)}
+  100% {transform: translateX(-10%)}
+}
+
+.treugolnikv1{
+  position: absolute;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.tr7{
+  width: 100%;
+  margin-top: -26vw;
+  animation: tr3 5s linear infinite;
+}
+
+@keyframes tr7 {
+  0% {transform: translateY(-23%)}
+  50%{transform: translateY(-3%)}
+  100% {transform: translateY(-23%)}
+}
+
+.tr8{
+  width: 100%;
+  animation: tr4 5s linear infinite;
+}
+
+@keyframes tr8 {
+  0% {transform: translateY(23%)}
+  50%{transform: translateY(3%)}
+  100% {transform: translateY(23%)}
+}
+
+.text3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.text3 h4{
+  font-size: 37px;
+  white-space: nowrap;
+  bottom: 15vw;
+  left: 4vw;
+  line-height: 85.4%;
+  animation: text3 5s linear infinite;
+}
+
+@keyframes text3 {
+  0% {transform: translateY(14%)}
+  50%{transform: translateY(-2%)}
+  100% {transform: translateY(14%)}
+}
+
+h5{
+  font-size: 37px;
+  bottom: 12vw;
+  right: 10vw;
+  line-height: 85.4%;
+  animation: text3 4s linear infinite;
+}
+
+@keyframes h5 {
+  0% {transform: translateY(14%)}
+  50%{transform: translateY(-2%)}
+  100% {transform: translateY(14%)}
+}
+
+.right-block5{
+  width: 60%;
+  background: url(./img/bg7.svg);
+  background-size: cover;
+  overflow: hidden;
+}
+
+.gori1{
+  margin-top: 10vw;
+  z-index: 3;
+}
+
+.gori2{
+  top: -21vw;
+  animation: gori2 7s linear infinite;
+}
+
+@keyframes gori2{
+  0% {transform: translateX(-2%)}
+  50%{transform: translateX(0%)}
+  100% {transform: translateX(-2%)}
+}
+
+.gori3{
+  top: -34vw;
+  left: 36vw;
+  animation: gori3 4s linear infinite;
+}
+
+@keyframes gori3{
+  0% {transform: translateX(-2%)}
+  50%{transform: translateX(0%)}
+  100% {transform: translateX(-2%)}
+}

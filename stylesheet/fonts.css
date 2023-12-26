@@ -1,0 +1,13 @@
+@font-face {
+  font-family:'KarloCham';
+  font-weight: 400;
+  font-style: normal;
+  src: url('./fonts/KarloCham-Brush.ttf') format('truetype');
+}
+
+@font-face {
+  font-family:'KarloCham';
+  font-weight: 400;
+  font-style: normal;
+  src: url('./fonts/KarloCham-Line.ttf') format('truetype');
+}
